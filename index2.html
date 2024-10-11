@@ -16,13 +16,27 @@
     <div class="changName">
         <label>Set Username</label>
         <input type="text" id="newname">
-        <button id="btName" onclick="setName()">Click</button>
+        <button id="btName"class="btName" onclick="setName()">Click</button>
     </div>
 
     <div class="changPic">
         <label>Set Picture</label>
         <input type="text" id="newPic">
         <button id="btName" onclick="setPic()">Click</button>
+    </div>
+
+    <div class="phone">
+        <div>Phone</div>
+
+        <div class="phoneInput">
+            <div><input type="text" id="phoneName"></div>
+            <div><input type="text" id="phoneCall"></div>
+        </div>
+
+        <div class="phoneBt">
+            <button id="add" class="addBt" onclick="AddBt()">Add</button>
+            <button id="Exp" class="expBt" onclick="ExportBt()">Export</button>
+        </div>
     </div>
 </body>
 </html>
