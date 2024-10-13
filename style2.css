@@ -1,3 +1,7 @@
+* {
+    font-family: Arial;
+}
+
 .profile {
     width: 300px;
     height: 300px;
@@ -21,33 +25,59 @@
     right: 20px;
 }
 
-.addBt {
-    color: darkblue;
+/* --------------------------PHONE-------------------------- */
+
+.title {
     font-weight: bold;
-    background-color: white;
-    border: 2px solid darkblue;
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 20px;
+}
+.phoneInput{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+.phoneInput input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    padding: 5px 10px;
+}
+.phoneBt {
+    width: 100%;
+    display: grid ;
+    grid-template-columns: 2fr 3fr 1fr 2fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.addBt {
+    color: white;
+    font-weight: bold;
+    background-color:deepskyblue;
+    border: 2px solid deepskyblue;
     padding: 10px;
     border-radius: 10px;
 }
-
-
-
-
+.addBt:hover {
+    background-color: darkblue;
+    border-color: darkblue;
+}
 
 .expBt {
-    color: darkblue;
+    color: deepskyblue;
     font-weight: bold;
     background-color: white;
-    border: 2px solid darkblue;
+    border: 2px solid deepskyblue;
     padding: 10px;
     border-radius: 10px;
 }
-
-.btName {
-    color: darkblue;
-    font-weight: bold;
-    background-color: white;
-    border: 2px solid darkblue;
-    padding: 5px 10px;
-    border-radius: 10px;
+.expBt:hover {
+    color: white;
+    background-color: darkblue;
+    border-color: darkblue;
 }
