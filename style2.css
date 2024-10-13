@@ -1,10 +1,73 @@
+/* --------------------------ALL-------------------------- */
+
 * {
     font-family: Arial;
 }
 
+input{
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding: 5px 10px;
+    background-color: transparent;
+    outline: none;
+}
+.title {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 30px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-blend-mode: color;
+    background: linear-gradient(#e66465, #9198e5);
+    min-height: 1500px;
+}
+
+/* --------------------------CT-------------------------- */
+.contain {
+    width: 80%;
+    height: 580px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px 40px 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 1000px;
+    min-width: 550px;
+}
+
+/* --------------------------PROFILE-------------------------- */
+
+.PF {
+    display: flex;
+    justify-content: center;
+}
+
+.topName {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.topName a {
+    color: black;
+    font-family: cursive;
+    text-decoration: none;
+}
+.topName a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
 .profile {
-    width: 300px;
-    height: 300px;
+    width: 183px;
+    height: 183px;
     background-image: url(https://img1.wsimg.com/isteam/ip/80b4ed6d-b842-487d-a68f-bfd665fff30e/OIPMVDDA6TG.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:1000,cg:true);
     background-position: center;
     background-size: cover;
@@ -13,40 +76,57 @@
 }
 
 .notify {
-    width: 60px ;
-    height: 60px;
-    background-color: rosybrown;
+    width: 30px ;
+    height: 30px;
+    background-color: firebrick;
+    color: white;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     display: flex;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
 }
 
+/* --------------------------SET-------------------------- */
+
+.change {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5.2fr 0.8fr 1fr;
+    grid-gap: 10px;
+}
+
+.ChangTxt {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.change button{
+    background-color:black;
+    border: 2px solid black;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    color: white;
+}
+.change button:hover{
+    background-color: orange;
+    border-color: orange;
+    color: black;
+}
 /* --------------------------PHONE-------------------------- */
 
-.title {
-    font-weight: bold;
-    font-size: 30px;
-    font-family: cursive;
-    text-align: center;
-    padding-top: 20px;
-}
 .phoneInput{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-gap: 10px;
     margin-top: 10px;
 }
-.phoneInput input{
-    width: 100%;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid darkgray;
-    padding: 5px 10px;
-}
+
 .phoneBt {
     width: 100%;
     display: grid ;
@@ -69,10 +149,10 @@
 }
 
 .expBt {
-    color: deepskyblue;
+    color: black;
     font-weight: bold;
-    background-color: white;
-    border: 2px solid deepskyblue;
+    background-color: transparent;
+    border: 2px solid black;
     padding: 10px;
     border-radius: 10px;
 }

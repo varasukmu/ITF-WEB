@@ -21,6 +21,15 @@
     column-gap: 80px;
 }
 
+.linkPage div{
+    padding: 5px 0;
+}
+.linkPage button:hover{
+    background-color: deepskyblue;
+    color: black;
+    border-color: deepskyblue;
+}
+
 .btNav {
     color: white;
     font-weight: bold;

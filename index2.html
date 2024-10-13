@@ -8,40 +8,54 @@
     <script src="/script.js"></script>
 </head>
 <body>
-    <div id="name">Varaporn </div>
-    <div id="pic" class="profile">
-        <div class="notify"><p>1</p></div>
-    </div>
-
-    <div class="changName">
-        <label>Set Username</label>
-        <input type="text" id="newname">
-        <button id="btName"class="btName" onclick="setName()">Click</button>
-    </div>
-
-    <div class="changPic">
-        <label>Set Picture</label>
-        <input type="text" id="newPic">
-        <button id="btName" onclick="setPic()">Click</button>
-    </div>
-
-    <div class="phone">
-        <div class="title">Phone Number List</div>
-
-        <div class="phoneInput">
-            <div></div>
-            <div><input type="text" id="phoneName" placeholder="Enter phone number"></div>
-        </div>
-        <div class="phoneInput">
-            <div></div>
-            <div><input type="text" id="phoneCall" placeholder="Enter Name"></div>
+    <div class="contain">
+        <div id="name" class="topName">
+            <a  href="https://www.instagram.com/varaaa_aa/"
+                target="_blank" title="Go to IG: Varaaa_aa">
+                Varaporn Sukmuang, 67070159
+            </a>
         </div>
 
-        <div class="phoneBt">
+        <div class="PF">
+            <div id="pic" class="profile">
+                <div class="notify"><p>1</p></div>
+            </div>
+        </div>
+
+        <div class="title">Set Username or Profile image</div>
+
+        <div class="change">
             <div></div>
-            <button id="add" class="addBt" onclick="AddBt()">Add</button>
-            <button id="Exp" class="expBt" onclick="ExportBt()">Export</button>
+            <div class="ChangTxt">Username</div>
+            <input type="text" id="newname" placeholder="Enter Username">
+            <button id="btName" onclick="setName()">SET</button>
             <div></div>
+        </div>
+        <div class="change">
+            <div></div>
+            <div class="ChangTxt">Profile</div>
+            <input type="text" id="newPic" placeholder="Enter Image URL">
+            <button id="btName" onclick="setPic()">SET</button>
+        </div>
+
+        <div class="phone">
+            <div class="title">Phone Number List</div>
+
+            <div class="phoneInput">
+                <div></div>
+                <div><input type="text" id="phoneName" placeholder="Enter phone number"></div>
+            </div>
+            <div class="phoneInput">
+                <div></div>
+                <div><input type="text" id="phoneCall" placeholder="Enter Name"></div>
+            </div>
+
+            <div class="phoneBt">
+                <div></div>
+                <button id="add" class="addBt" onclick="AddBt()">Add</button>
+                <button id="Exp" class="expBt" onclick="ExportBt()">Export</button>
+                <div></div>
+            </div>
         </div>
     </div>
 </body>
