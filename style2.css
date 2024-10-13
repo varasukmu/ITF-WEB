@@ -175,45 +175,42 @@ body {
 
 .tableBook {
     width: 100%;
-    border-collapse: collapse; /* รวมเส้นขอบให้ดูเรียบร้อย */
+    border-collapse: collapse;
 }
 
 .tableBook th,
 .tableBook td {
     padding: 10px;
-    text-align: left; /* ข้อมูลอยู่ชิดซ้าย */
-    border-bottom: 1px solid black; /* เส้นใต้ขีดขั้น */
+    text-align: left;
+    border-bottom: 1px solid black;
 }
 
 .tableBook th {
-    text-align: center; /* หัวข้ออยู่ตรงกลาง */
+    text-align: center;
 }
 
-/* กำหนดความกว้างของคอลัมน์ */
 .tableBook th:nth-child(1),
 .tableBook td:nth-child(1) {
-    width: 20%; /* ลำดับที่กว้าง 20% */
+    width: 20%;
 }
 
 .tableBook th:nth-child(2),
 .tableBook td:nth-child(2),
 .tableBook th:nth-child(3),
 .tableBook td:nth-child(3) {
-    width: 40%; /* ชื่อและเบอร์กว้างอย่างละ 40% */
+    width: 40%;
 }
 
-/* กำหนดเส้นขอบระหว่างคอลัมน์ */
 .tableBook td:not(:last-child) {
-    border-right: 1px solid black; /* เส้นขอบขวา */
+    border-right: 1px solid black;
 }
 
-/* ลบเส้นขอบด้านซ้ายและขวาของตาราง */
 .tableBook th:first-child,
 .tableBook td:first-child {
-    border-left: none; /* ลบเส้นขอบซ้าย */
+    border-left: none;
 }
 
 .tableBook th:last-child,
 .tableBook td:last-child {
-    border-right: none; /* ลบเส้นขอบขวา */
+    border-right: none;
 }
