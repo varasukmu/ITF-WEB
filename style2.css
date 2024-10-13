@@ -23,14 +23,15 @@ input{
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-blend-mode: color;
     background: linear-gradient(#e66465, #9198e5);
     min-height: 1500px;
 }
 
 /* --------------------------CT-------------------------- */
-.contain {
+.contain1 {
     width: 80%;
     height: 580px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -38,7 +39,15 @@ body {
     border-radius: 10px;
     margin-top: 40px;
     max-width: 1000px;
-    min-width: 550px;
+    min-width: 350px;
+}
+.contain2 {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px 40px 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 1000px;
 }
 
 /* --------------------------PROFILE-------------------------- */
@@ -160,4 +169,51 @@ body {
     color: white;
     background-color: darkblue;
     border-color: darkblue;
+}
+
+/* --------------------------TABLE-------------------------- */
+
+.tableBook {
+    width: 100%;
+    border-collapse: collapse; /* รวมเส้นขอบให้ดูเรียบร้อย */
+}
+
+.tableBook th,
+.tableBook td {
+    padding: 10px;
+    text-align: left; /* ข้อมูลอยู่ชิดซ้าย */
+    border-bottom: 1px solid black; /* เส้นใต้ขีดขั้น */
+}
+
+.tableBook th {
+    text-align: center; /* หัวข้ออยู่ตรงกลาง */
+}
+
+/* กำหนดความกว้างของคอลัมน์ */
+.tableBook th:nth-child(1),
+.tableBook td:nth-child(1) {
+    width: 20%; /* ลำดับที่กว้าง 20% */
+}
+
+.tableBook th:nth-child(2),
+.tableBook td:nth-child(2),
+.tableBook th:nth-child(3),
+.tableBook td:nth-child(3) {
+    width: 40%; /* ชื่อและเบอร์กว้างอย่างละ 40% */
+}
+
+/* กำหนดเส้นขอบระหว่างคอลัมน์ */
+.tableBook td:not(:last-child) {
+    border-right: 1px solid black; /* เส้นขอบขวา */
+}
+
+/* ลบเส้นขอบด้านซ้ายและขวาของตาราง */
+.tableBook th:first-child,
+.tableBook td:first-child {
+    border-left: none; /* ลบเส้นขอบซ้าย */
+}
+
+.tableBook th:last-child,
+.tableBook td:last-child {
+    border-right: none; /* ลบเส้นขอบขวา */
 }
